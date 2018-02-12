@@ -16,19 +16,22 @@
 
 // 2-depending on the previous exercises , write a function that returns the older classmate from mates array.
 
-var max=classmate[0].age;
+var maxage=classmate[0].age;
+var maxName=classmate[0].fullname;
 function oldClassMate(){
 
 for (var i=1;i<classmate.length;i++){
 
  if (classmate[i].age>max){
- 	max=classmate[i].age;
+ 	maxage=classmate[i].age;
+ 	maxName=classmate[i].fullname;
+
 
 }
 
 }
 
-return  max;
+return  maxName;
 
 }
 
@@ -55,7 +58,7 @@ return count;
 
 // if you finished the above, solve the following:
 // write a function that takes array of strings and returns an array of the strings that have the same length
-	    ['hi','hello','welcome','hy'] // ==> ["hi","hy"]
+	   // ['hi','hello','welcome','hy','fg'] // ==> ["hi","hy"]
 
 
 
@@ -63,6 +66,17 @@ return count;
 
 
 
+//method 1
+
+
+
+
+
+
+
+
+
+// method 2
 function equalLength(arrStr){
 // create a new object obj and fill the array element as a keys to it, each key is associated to the length of each key.
 var obj={}
@@ -89,6 +103,6 @@ if (obj[key]===arrStr[i].length && key!==arrStr[i])  // if there is a match
 
 return resultArr;
 }
-
+//.......................
 
 

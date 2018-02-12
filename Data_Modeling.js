@@ -77,9 +77,3 @@ return false;
 	var mates=[mate1,mate2,mate3,mate4];
 
 
-
-
-
-
-
-	
