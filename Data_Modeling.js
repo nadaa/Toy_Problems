@@ -21,13 +21,13 @@ function createClassMate(name,age,gender,nationality){
         age:age,
         gender:gender,
         nationality:nationality
-    }
+    };
 	}
 
 
 	function dispalyFriend(mate){
 
-    return 'Name: '+mate.name+'Age: '+mate.age+'Gender: '+mate.gender+'Nationality: '+mate.nationality;
+    return 'Name: '+mate.name+','+'Age: '+mate.age+', '+'Gender: '+mate.gender+', '+'Nationality: '+mate.nationality;
 	}
 
 
@@ -58,7 +58,7 @@ function createClassMate(name,age,gender,nationality){
 
 function searchMate(mates,name){
 for (var i=0;i<mates.length;i++){
-  if (mates[i].name===name){
+  if (mates[i].name.toLowerCase().indexOf(name.toLowerCase())!==-1){
 
   	return true;
   }
@@ -68,9 +68,9 @@ return false;
 
 }
 
-	mate1=createClassMate('Waed',26,'female','Jordenian'};
-	mate2=createClassMate('Bayan',20,'female','Serian'};
-	mate3=createClassMate('salsabeel',26,'female','Jordenian'};
+	mate1=createClassMate('Waed',26,'female','Jordenian');
+	mate2=createClassMate('Bayan',20,'female','Serian');
+	mate3=createClassMate('salsabeel',26,'female','Jordenian');
 
     mate4=createClassMate('Belal',25,'male','Jordenian')
 
