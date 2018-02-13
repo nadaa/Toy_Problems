@@ -5,8 +5,17 @@
           func(array[i]);
         }
     }
+
+
 	function absAll(array) {
-	 //your code here
+	var resultArr=[];
+	 each(array,function(x){
+     if (x<0){x=x*-1;
+         }
+      resultArr.push(x);
+	 })
+return resultArr;
+
 	}
 
 	/*
@@ -22,6 +31,16 @@
             func(array[i], i);
         }
     }
+
+
 	function multiplyOfFour(array) {
-	    //your code here
+	 var resultArr=[];   
+     each(array,function(n,i){
+     	if (i%4===0 && i>0){
+        resultArr.push(n*4);}
+      
+     })
+return resultArr;
+
+
 	}
