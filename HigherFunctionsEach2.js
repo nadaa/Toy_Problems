@@ -51,12 +51,25 @@ printValue(obj_1); =>
     }
     
     
-	function printValue(obj) {
-		var output='';
+	// function printValue(obj) {
+	// 	var output=[];
+	// 	each(obj,function(value,key){
+ //            output+=value+'\n'
+	// 	});
+	// 	return output;
+
+
+	// }
+
+
+function printValue(obj) {
+		var output=[];
 		each(obj,function(value,key){
-            output+=value+'\n'
+            console.log(value);
 		});
-		return output;
+		
+
+		
 
 
 	}
