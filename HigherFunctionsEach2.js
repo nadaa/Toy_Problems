@@ -63,7 +63,7 @@ printValue(obj_1); =>
 
 
 function printValue(obj) {
-		var output=[];
+		//var output=[];
 		each(obj,function(value,key){
             console.log(value);
 		});
