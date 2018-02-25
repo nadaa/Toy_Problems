@@ -22,11 +22,11 @@ var guessMyNumber=function(n){
 
 
 var giveUp=function(){
-    	return rand;
+    	return this.rand;
   	}
 
 var numOfGuesses=function(){
-    	return counter;
+    	return this.counter;
   	}
 
 
