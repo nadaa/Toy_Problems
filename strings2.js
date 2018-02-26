@@ -7,15 +7,23 @@
 
 	function nextItem(items, elem){
 		
-		for (var i=0;i<items.length;i++){
+		// method1
+		// for (var i=0;i<items.length;i++){
 
-			if(elem===items[i])
-			{ 
-				return items[i+1];
-			}
+		// 	if(elem===items[i])
+		// 	{ 
+		// 		return items[i+1];
+		// 	}
 			
-		}
-		return null;
+		// }
+		// return null;
+
+
+		//method2
+		var index=items.indexOf(elem);
+		return items[index+1]
+
+
 	}
 
 //  We need a function that can transform a number into a string.
