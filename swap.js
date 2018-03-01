@@ -5,7 +5,7 @@
 	// 
 	// 
 	
-
+//method1
 	function swap(input){
 		// since string is immutable, we can convert it first to an array
 		strArr=input.split('');
@@ -27,3 +27,8 @@
 				return acc+elem;
 		},'')
 	}
+
+
+	// method2
+	
+	
